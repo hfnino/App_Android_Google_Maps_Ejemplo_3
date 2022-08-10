@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Cambiamos el contrain layout que viene por defecto y lo convertimos
+en un componente fragment. En este caso estamos creando el fragment desde
+el layout, pero le estamos diciendo que sea de tipo
+com.google.android.gms.maps.SupportMapFragment, que es un fragment que
+viene dentro de la librería que implementamos en el build.grade para usar map
+....implementation 'com.google.android.gms:play-services-maps:17.0.0'....
+y este fragment contiene la implementación de los mapas, es por ello que
+fue necesario convertir el contrain layout que viene por defecto
+en un componente fragment.-->
+
+<fragment
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/fragmentMap"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"/>
+    <!-- -->

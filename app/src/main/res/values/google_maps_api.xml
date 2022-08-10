@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- En este archivo estamos creando un recurso de tipo string donde almacenamos nuestra api key que
+obtubimos en google cloud console las propierdades templateMergeStrategy="preserve" translatable="false"
+es por que no queremos que nuestra api key de google maps nose modifique nunca-->
+<resources>
+<string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDNkMB-eR9_xhr6uyLBIYf70cL9EIgy7f4</string>
+</resources>

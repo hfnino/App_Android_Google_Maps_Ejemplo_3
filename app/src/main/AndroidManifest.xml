@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="co.com.henryto.appgooglemaps">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppGoogleMaps"
+        tools:targetApi="31">
+
+        <!--  Con la siguiente meta-data, le estamos diciendo que para la API_KEY de geolocalización
+         de android, le vamos a asignar el valor que se encuentra en un fichero de tiene recursos
+          string (google_maps_api.xml) y el nombre del recurso en cuestion es "google_maps_key" -->
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key"/>
+
+
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
